@@ -54,7 +54,29 @@ const metadata = {
 
   <Note title="Latest News:" description="We have just announced the event." />
 
-  <!-- Steps Widget ****************** -->
+  <!-- Content Widget **************** -->
+
+  <Content2
+    title='About <span class="text-accent dark:text-white"> SAIMI</span>'
+    id='about'
+    sections={[
+    {
+      subtitle: "Overview",
+      text: "With the rise and influence of machine learning (ML) in medical application and the need to translate newly developed techniques into clinical practice, questions about safety and uncertainty over measurements and reported quantities have gained importance. Obtaining accurate measurements is insufficient, as one needs to establish the circumstances under which these values generalize, or give appropriate error bounds for these measures. This is becoming particularly relevant to patient safety as many research groups and companies have deployed or are aiming to deploy ML technology in clinical practice."
+    },
+    {
+      subtitle: "Details",
+      text: "In the last few years, machine learning (ML) techniques have permeated many aspects of the MICCAI community, leading to substantial progress in a wide range of applications ranging from image analysis to surgical assistance. However, in medical applications, algorithms ultimately assist life and death decisions, and translation of such innovations into practice requires a measure of safety. In practice, ML systems often face situations where the correct decision is ambiguous, and therefore principled mechanisms for quantifying uncertainty are required to envision potential practical deployment."
+    },
+    {
+      subtitle: "Format",
+      text: "This symposium will be held as an in-person event in Bern."
+    }
+  ]}
+  >
+  </Content2>
+
+    <!-- Steps Widget ****************** -->
 
   <Steps3
     title="Important Dates"
@@ -79,37 +101,16 @@ const metadata = {
         icon: 'tabler:number-3',
       },
     ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content2
-    title='About <span class="text-accent dark:text-white"> SAIMI</span>'
-    id='about'
-    sections={[
-    {
-      subtitle: "Overview",
-      text: "With the rise and influence of machine learning (ML) in medical application and the need to translate newly developed techniques into clinical practice, questions about safety and uncertainty over measurements and reported quantities have gained importance. Obtaining accurate measurements is insufficient, as one needs to establish the circumstances under which these values generalize, or give appropriate error bounds for these measures. This is becoming particularly relevant to patient safety as many research groups and companies have deployed or are aiming to deploy ML technology in clinical practice."
-    },
-    {
-      subtitle: "Details",
-      text: "In the last few years, machine learning (ML) techniques have permeated many aspects of the MICCAI community, leading to substantial progress in a wide range of applications ranging from image analysis to surgical assistance. However, in medical applications, algorithms ultimately assist life and death decisions, and translation of such innovations into practice requires a measure of safety. In practice, ML systems often face situations where the correct decision is ambiguous, and therefore principled mechanisms for quantifying uncertainty are required to envision potential practical deployment."
-    },
-    {
-      subtitle: "Format",
-      text: "The UNSURE workshop will be held as an in-person, satellite event of MICCAI 2025 in Daejung. This year, the workshop will be held in conjunction with the Uncertainty Tutorial."
-    }
-  ]}
-  >
+    >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content2>
+  </Steps3>
 
     <!-- Content Widget **************** -->
 
   <Content2
-    title='Call for Papers'
+    title='Call for Abstracts'
     id='call'
     sections={[
     {
@@ -135,7 +136,7 @@ const metadata = {
     },
     {
       subtitle: "How to submit?",
-      text: "Please submit papers using the paper submission system. The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. Submission Deadline: 30.04.2026."
+      text: "Please submit abstracts using the abstract submission system. The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. Submission Deadline: 30.04.2026."
     },
     {
       subtitle: "Presentation",
@@ -210,11 +211,11 @@ const metadata = {
     sections={[
     {
       subtitle: "Registration",
-      text: "Please use the following link to register.",
+      text: "Registration will open soon.",
     },
     {
       subtitle: "Prices",
-      text: "Attending the event is free of charge. A registration via the above link is however mandatory.",
+      text: "Attending the event is free of charge. However, registration is mandatory.",
     },
   ]}
   >
@@ -305,7 +306,7 @@ const metadata = {
     sections={[
     {
       subtitle: "In case of questions, please feel free to reach out!",
-      text: "email@email.com",
+      text: "tim.fluehmann@unibe.ch",
     },
   ]}
   >

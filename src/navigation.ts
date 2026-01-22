@@ -3,15 +3,15 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Important Dates',
-      href: getPermalink('/#importantdates')
-    },
-    {
       text: 'About',
       href: getPermalink('/#about')
     },
     {
-      text: 'Call for Papers',
+      text: 'Important Dates',
+      href: getPermalink('/#importantdates')
+    },
+    {
+      text: 'Call for Abstracts',
       href: getPermalink('/#call')
     },
     {
